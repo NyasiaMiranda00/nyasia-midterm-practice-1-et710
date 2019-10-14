@@ -5,29 +5,30 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyasia Midterm Practice ET-710</title>
-    <!-- *Begin AngularJS -->
-    <!-- *End AngularJS -->
-
 
     <!-- *Begin AngularJS -->
+        <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
+        <script src="js/vendor/angular-1.7.8/angular-animate.min.js"></script>
+        <script src="js/vendor/angular-1.7.8/angular.route.js"></script>
     <!-- *End AngularJS -->
-
-
 
     <!-- *Begin Datatables.net -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.js"></script>
     <!-- *End Datatables.net -->
-
-
 
     <!-- *Begin Font Awesome -->
     <!-- *End Font Awesome -->
 
-
-
-
-
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+
   </head>
   <body>
     <!-- *Begin Nav-->
@@ -45,6 +46,12 @@
 
     <!-- *Begin Content -->
     <!-- *Begin AngularJS -->
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
     <!-- *End AngularJS -->
     <!-- *End Content -->
 
@@ -53,7 +60,7 @@
     <!-- *Begin Footer -->
     <!-- *End Footer -->
 
-    
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
